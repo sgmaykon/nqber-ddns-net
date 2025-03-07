@@ -9,6 +9,7 @@
             height: 100%;
             margin: 0;
         }
+    
 
     nav{
         display: flex;
@@ -63,6 +64,16 @@
         transition: 200ms;
     }
 
+    .darkmode{
+        background-color: #333;
+        color: white;
+    }
+    #switch{
+        position: fixed;
+        top:0;
+        right: 0;    
+    }
+
     </style>
 </head>
 <body>
@@ -86,6 +97,12 @@
                 <img src="/icons/qrcode.png">
             </span>
         </a>
+
+        <script type="text/javascript" src="darkmode.js" defer> </script>
+        <button id="switch">Switch</button> 
+        
+            
+        
     </nav>
 
 </body>

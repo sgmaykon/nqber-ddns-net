@@ -38,3 +38,13 @@ button{
     height: 20%;
     font-size: 1rem;
 }
+
+.darkmode{
+    background-color: #333;
+    color: white;
+}
+#switch{
+    position: fixed;
+    top:0;
+    right: 0;    
+}

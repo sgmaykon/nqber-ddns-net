@@ -1,8 +1,19 @@
-const tooth = document.querySelector(".tooth")
+const tooth = document.querySelector(".tooth");
 
+function updateToothImage() {
+	if (localStorage.getItem('darkmode') === 'enabled') {
+		tooth.src = './light-fury-nobg.gif';
+	} else {
+		tooth.src = './toothless-dancing-toothless.gif';
+	}
+}
 
+updateToothImage();
 
-function hide(){
+// Listen for changes in dark mode
+window.addEventListener('darkmode-change', updateToothImage);
+
+function hide() {
 	tooth.style.visibility = 'hidden';
 	setTimeout(show, 400);
 }
@@ -13,8 +24,5 @@ function show(){
 	tooth.style.visibility = 'visible';
 	setTimeout(hide, 1000);
 }
-
-
-
 //setInterval(show, 5000)
 show()
