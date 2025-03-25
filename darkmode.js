@@ -1,5 +1,4 @@
 const switcher = document.getElementById('switch'); 
-
 function enableDarkMode() {
 	document.body.classList.add('darkmode');
 	localStorage.setItem('darkmode', 'enabled');
