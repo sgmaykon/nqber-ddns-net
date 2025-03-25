@@ -43,8 +43,25 @@ button{
     background-color: #333;
     color: white;
 }
+
 #switch{
     position: fixed;
     top:0;
-    right: 0;    
+    right: 0;
+    margin-right: 12px;
+    margin-top: 12px;
+    background-color: #CCC;
+    color: blue;
+    border: none;
+    padding: 12px;
+    border-radius: 12px;
+    cursor: pointer;
+    width: 63.6px;
+    height: 41px;
+    font-size: 13.3px;
+}
+
+#switch:hover{
+    background-color: #A020F0;
+    color:white;
 }
